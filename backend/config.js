@@ -1,0 +1,1 @@
+module.exports.SECRET_KEY = "YOUR_SECRET_KEY_!!"

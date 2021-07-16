@@ -1,0 +1,271 @@
+#chatContainer{
+    background-image: url('./network.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.3;
+}
+
+.room-pointer:hover{
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+.user-contact-room{
+    cursor: pointer;
+}
+
+#userProfilePic:hover{
+    cursor: pointer;
+}
+
+.newGroupBtn:hover{
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.overlay p{
+    padding: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.overlayContainer:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nameGroupView:focus{
+    outline: none;
+}
+
+#aboutProfileView:focus{
+    outline: none;
+}
+
+#nameProfileView:focus{
+    outline: none;
+}
+
+#close-button{
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px 2px;
+    color: #21ddc7;
+}
+
+#close-button:focus{
+    outline: none;
+}
+
+#close-button:hover{
+    background-color: white;
+    border-radius: 100%;
+}
+
+#close-button-info-view{
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px 2px;
+    color: #21ddc7;
+    font-size: 2rem;
+}
+
+#close-button-info-view:focus{
+    outline: none;
+}
+
+#nameProfileBtn:focus{
+    outline: none;
+}
+
+.popover-btn:hover{
+    background-color: #F5F5F5;
+}
+
+input#serachInput{
+    border: 0px;
+    background-color: transparent;
+    width: 95%;
+}
+
+input#serachInput:focus{
+    border: 0px;
+    outline: none;
+}
+
+input#contactSerachInput{
+    border: 0px;
+    background-color: transparent;
+    width: 93%;
+}
+
+input#contactSerachInput:focus{
+    border: 0px;
+    outline: none;
+}
+
+
+.roomContainer{
+    height: 88%;
+}
+
+
+.adminMsg{
+    background-color: #34B7F1;
+}
+
+.fromMeChat{
+    width: max-content;
+    max-width:inherit;
+    margin-left: auto;
+    border: 1px solid #DCF8C6;
+    border-radius: 15px 15px 0px 15px;
+    background-color: #DCF8C6;
+}
+
+.fromOtherChat{
+    width: max-content;
+    max-width:inherit;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 15px 15px 15px 0px;
+    background-color: white;
+}
+
+.chatWindow{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* #F0F0F0 */
+.chatWindowComponent{
+    padding: 0;
+    border-collapse: collapse;
+    border: 0.1px solid #128C7E;
+}
+
+.componentHeader{
+    text-align: left;
+    background-color: #075e54;
+    color: white;
+    height: 12%;
+}
+
+.infoComponent{
+    height: 88%;
+    background-color: #F1F1F1;
+}
+
+.chatComponent{
+    height: 78%;
+    min-height: 78%;
+    max-height: 78%;
+    background-image: url("https://web.whatsapp.com/img/bg-chat-tile-light_04fcacde539c58cca6745483d4858c52.png");
+    z-index: -1;
+}
+
+.chatComponent{
+    background-color: #E2DAD2;
+}
+
+.logo-container img{
+    filter: invert(26%) sepia(28%) saturate(1416%) hue-rotate(125deg) brightness(100%) contrast(94%);
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.sendLogo{
+    width: 70%;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0px,  -25px); }
+    65%  { transform: translate(0, 25px); }
+    to   { transform: translate(0, -25px); }    
+}
+
+.chatForm{
+    height: 10%;
+    text-align: left;
+    background-color: #F0F0F0;
+    position: sticky;
+}
+
+.form-container{
+    background-color: #F0F0F0;
+    color: #128C7E;
+}
+
+.nav-link.navLink{
+    color: #25D366;
+}
+
+.App{
+    background-color: #128C7E;
+    background: linear-gradient(to bottom,#128C7E 20%, #D9DBD5 20% 80% );
+    padding: 3% 4%;
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+ 
+  ::-webkit-scrollbar :hover {
+    display: block;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

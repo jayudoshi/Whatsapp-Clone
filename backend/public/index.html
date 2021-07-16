@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Wolrd !!</h1>
+    <h2 id="h2""></h2>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io("http://localhost:9000");
+
+    socket.on("connection" , () => {
+        alert("Hello \n " + socket.id)
+        console.log(socket.id);
+        document.getElementById("h2").innerHTML(socket.id)
+        console.log(user);
+    })
+
+    let user = {
+        username: 'jay',
+        _id: "60d61a1bce0a531ba43d9d1d"
+    }
+    
+    let rooms = [{
+        name:"TEST UPDATE",
+        _id:"60d6309301938f627464ca49",
+        members:["jay","reena","timir"]
+    },{
+        name:"TEST UPDATE-1",
+        _id:"60d6368c9ff71b043c0f8d4a",
+        members:["jay"]
+    },{
+        name:"TEST UPDATE-3",
+        _id:"60d636bc9ff71b043c0f8d4e",
+        members:["jay","timir"]
+    }]
+</script>
+</html>
